@@ -13,7 +13,7 @@ btnElement.addEventListener('click', function(evt){
   // don't allow empty items to be added to the to-do list
   if (input.value === '' || input.value === 'type something!') {
     inputElement.style.backgroundColor = "lightgray";
-    input.value = "type something!"
+    input.value = 'type something!'
 
     inputElement.addEventListener('click', function(evt) {
       input.value = ""
@@ -33,13 +33,13 @@ btnElement.addEventListener('click', function(evt){
     document.querySelector('ul').appendChild(li)
   }
   
+  resetBtn.addEventListener('click', function(evt){
+    listElement.removeChild(li)
+  })
 })
 
 function handleClick(evt){
   evt.target.remove()
 }
 
-resetBtn.addEventListener('click', function(evt){
-  listElement.remove()
-})
 
