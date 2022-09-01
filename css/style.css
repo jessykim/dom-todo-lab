@@ -1,20 +1,41 @@
 html, body {
-  display: table;
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
+  display: table;
 }
 
 .content {
-  display: table-cell;
+  font-family: 'Courier New', Courier, monospace;
   text-align: center;
+  display: table-cell;
   vertical-align: middle;
 }
 
-#list {
+#input {
+  font-family: 'Courier New', Courier, monospace;
+  border-width: thin;
+  border-color: lightgray;
+}
+
+.list {
   display: inline-block;
-  margin: 0;
-  padding: 0;
   text-align: left;
+  padding: 15px;
+}
+
+#submit-button, #reset {
+  font-family: 'Courier New', Courier, monospace;
+  border-style: hidden;
+}
+
+#submit-button {
+  color: rosybrown;
+  font-weight: bolder;
+}
+
+#reset {
+  color: white;
+  background-color: rosybrown;
 }
